@@ -1,0 +1,31 @@
+
+.bg-primary-new {
+    background-color: #000060;
+}
+
+.bg-primary-new2 {
+    background-color: #1414da;
+}
+.nav-item {
+    position: relative;
+    height: 100%;
+}
+
+.nav-link:hover::after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    position: absolute;
+    bottom: -16;
+    left: 0;
+}
+
+
+@media only screen and (max-width: 720px){
+    .nav-link:hover::after {
+        height: 0px;
+        width: 0;
+    }
+}
